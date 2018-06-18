@@ -1,0 +1,17 @@
+{
+  "pages":[
+    "pages/detail/detail",
+    "pages/list/list",
+    "pages/logs/logs",
+    "pages/sublists1/sublists1",
+    "pages/sublists2/sublists2",
+    "pages/sublists3/sublists3",
+    "pages/add/add"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  }
+}

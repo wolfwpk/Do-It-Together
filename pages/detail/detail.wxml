@@ -1,0 +1,62 @@
+<view style="margin:10px;">
+<!-- form bindsubmit="formSubmit" -->
+  <view >活动名称</view>
+ <view class="section">
+  {{Activity[actId].Theme}}
+ </view> 
+  <!--view class="btn-area">
+    <button formType="submit">提交</button>
+   </view>
+ <!--/form-->
+<!--view>{{ceshis}}</view-->
+  
+  <view >计划日期</view>
+  
+  <view class="section">  
+  开始时间: {{Activity[actId].StartTime.year}}年{{Activity[actId].StartTime.month}}月{{Activity[actId].StartTime.day}}日{{Activity[actId].StartTime.hour}}:{{Activity[actId].StartTime.minute}}
+  </view>
+
+   <view class="section">  
+  结束时间: {{Activity[actId].EndTime.year}}年{{Activity[actId].EndTime.month}}月{{Activity[actId].EndTime.day}}日{{Activity[actId].EndTime.hour}}:{{Activity[actId].EndTime.minute}}
+    </view>
+
+<!--
+  <view class="section">  
+  持续时间: {{(EndDate-StartDate)/1}}
+    </view>
+-->
+
+
+
+  <view >活动人数</view>
+    <view class="section">
+      
+      <progress  percent='{{PeopleIn/Activity[actId].PeopleNum*100}}' stroke-width='10'  color='#00aeae' >
+      </progress>
+      <view class="two-side">
+        <text>已报名：{{PeopleIn}}</text>
+        <text>计划人数：{{Activity[actId].PeopleNum}}</text>
+      </view>
+  </view>
+
+ <view >活动详情</view>
+ <view class="section">
+  {{Activity[actId].Detail}}
+ </view> 
+  
+  <view >评论:</view>
+  <view wx:for="{{Activity[actId].Comments}}" class="comment">
+    <view style='margin:10px'>{{item}}</view>
+
+  </view>
+
+ <view class="section">
+  <textarea bindblur="bindDetailBlur" auto-height placeholder="请输入texterea内容" value="{{Detail}}" />
+ </view> 
+   <form bindsubmit="formSubmit">
+   <button formType="submit">评论</button>
+    </form>
+    
+   <button formType="submit">加入</button>
+    
+</view>

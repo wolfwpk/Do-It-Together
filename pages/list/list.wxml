@@ -1,0 +1,6 @@
+<view class='container'>
+   <navigator url='/pages/sublists1/sublists1' hover-class='nav-hover' open-type='navigate'> 拼运动</navigator>
+   <navigator url='/pages/sublists2/sublists2' hover-class='nav-hover' open-type='navigate'> 拼饮食</navigator>
+   <navigator url='/pages/sublists3/sublists3' hover-class='nav-hover' open-type='navigate'> 拼旅行</navigator>
+   <navigator url='/pages/sublists3/sublists3' hover-class='nav-hover' open-type='navigate'> 拼其他</navigator>
+</view>

@@ -1,0 +1,15 @@
+<view class='container'>
+   <view wx:for="{{Activity}}"  wx:if="{{item.Category=='sport'}}" class='main'>
+   <image class='image' src="{{item.Picture}}"></image>
+   
+   <view class='list'>
+     <text>活动名称：{{item.Theme}}</text>
+     <text>发起人：{{item.Leader}}</text>
+     <text>活动位置：{{item.Site}}</text>
+    <text>截止时间：{{item.EndTime}}</text>
+     <text>详情：{{item.Detail}}</text>
+  
+   </view>
+   </view>
+
+</view>

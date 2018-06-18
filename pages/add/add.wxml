@@ -1,0 +1,80 @@
+
+  
+<!-- form bindsubmit="formSubmit" -->
+  <view >在下方输入活动名称</view>
+ <view class="section">
+  <textarea bindblur="bindNameBlur" auto-height placeholder="请输入texterea内容" value="{{Theme}}" />
+ </view> 
+  <!--view class="btn-area">
+    <button formType="submit">提交</button>
+   </view>
+ <!--/form-->
+<!--view>{{ceshis}}</view-->
+  
+
+
+  <view >点击下方选择活动类型</view>
+  <view class="section"> 
+    <picker bindchange="bindPickerChange" value="{{index1}}" range="{{array1}}">
+      <view class="picker">
+        当前选择：{{array1[index1]}}
+      </view>
+    </picker>
+  </view>
+
+  <view >点击下方选择起始日期</view>
+  <view class="section">  
+  <picker mode="date" value="{{StartDate}}" start="2018-05-01" end="2020-09-01" bindchange="bindStartDateChange">
+    <view>
+      当前选择: {{StartDate}}
+    </view>
+    </picker>
+ </view>  
+
+
+<view class="section">  
+  <picker mode="time" value="{{StartTime}}" start="00:00" end="23:59" bindchange="bindStartTimeChange">  
+    <view class="picker">  
+     时间 : {{StartTime}}
+    </view>  
+  </picker>  
+</view>
+
+
+  <view >点击下方选择结束日期与时间</view>
+  <view class="section">  
+  <picker mode="date" value="{{EndDate}}" start="2018-05-01" end="2020-09-01" bindchange="bindEndDateChange">
+    <view>
+      日期: {{EndDate}}
+    </view>
+    </picker>
+  </view>  
+
+  <view class="section">  
+    <picker mode="time" value="{{time}}" start="00:00" end="23:59" bindchange="bindEndTimeChange">  
+      <view class="picker">  
+       时间 : {{EndTime}}
+      </view>  
+    </picker>
+  </view>  
+
+
+
+
+  <view >点击下方选择活动人数</view>
+     <view class="section"> 
+  <picker bindchange="bindNumberPickerChange" value="{{index2}}" range="{{array2}}">
+    <view>
+      当前选择：{{array2[index2]}}
+    </view>
+  </picker>
+     </view> 
+
+  <view >在下方输入活动详情</view>
+ <view class="section">
+  <textarea bindblur="bindDetailBlur" auto-height placeholder="请输入texterea内容" value="{{Detail}}" />
+ </view> 
+
+   <form bindsubmit="formSubmit">
+   <button formType="submit">提交</button>
+    </form>

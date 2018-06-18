@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/list/list",
+    "pages/logs/logs",
+    "pages/sublists1/sublists1",
+    "pages/index/index"
+  ],
+  "window": {
+  "navigationBarTitleText": "拼一拼",
+  "navigationBarBackgroundColor": "#CD0000",
+  "navigationBarTextStyle": "black"
+  }
+}
